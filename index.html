@@ -1,56 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bitcoin & Economic Tracker</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin & Economic Tracker</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        h1 { font-size: 24px; font-weight: bold; }
+        h2 { font-size: 18px; font-weight: bold; }
+        .section { margin-bottom: 20px; }
+    </style>
 </head>
 <body>
+    <h1>Bitcoin & Economic Tracker</h1>
 
-  <h1>Bitcoin & Economic Tracker</h1>
-  
-  <!-- Country Selector -->
-  <div class="country-section">
-    <label for="countrySelect">Selected Country:</label>
-    <select id="countrySelect"></select>
-  </div>
-
-  <div class="container">
-    <!-- Bitcoin and Satoshi Price Card -->
-    <div class="card">
-      <h2>Bitcoin Price (Live)</h2>
-      <p>USD: <span id="btcUSD">Loading...</span></p>
-      <p>CAD: <span id="btcCAD">Loading...</span></p>
-      <p>INR: <span id="btcINR">Loading...</span></p>
-      <p>EUR: <span id="btcEUR">Loading...</span></p>
-      <p>Satoshi Price (USD): <span id="satoshiUSD">Loading...</span></p>
-      <p>High/Low (24H): <span id="btcHighLow">Loading...</span></p>
-      <p>Change (24H): <span id="btcChange">Loading...</span></p>
-      <p>Market State: <span id="btcState">Loading...</span></p>
-      <p class="refresh">Refreshes every 30 seconds</p>
+    <div class="section">
+        <label for="country">Selected Country: </label>
+        <select id="country">
+            <option value="USD">🇺🇸</option>
+            <option value="CAD">🇨🇦</option>
+            <option value="INR">🇮🇳</option>
+            <option value="EUR">🇪🇺</option>
+        </select>
     </div>
 
-    <!-- Economic Indicators Card -->
-    <div class="card">
-      <h2>Economic Indicators</h2>
-      <p>US Repo Rate: <span id="repoRate">Loading...</span></p>
-      <p>Prime Rate: <span id="primeRate">Loading...</span></p>
-      <p>Unemployment Rate: <span id="unemploymentRate">Loading...</span></p>
-      <p>US Money Supply (M2SL): <span id="m2sl">Loading...</span></p>
-      <p>EURO Money Supply: <span id="euroM3">Loading...</span></p>
-      <p class="refresh">Refreshes every 5 minutes</p>
-    </div>
+    <h2>Bitcoin Price (Live)</h2>
+    <p>USD: <span id="price-usd">Loading...</span></p>
+    <p>CAD: <span id="price-cad">Loading...</span></p>
+    <p>INR: <span id="price-inr">Loading...</span></p>
+    <p>EUR: <span id="price-eur">Loading...</span></p>
+    <p>Satoshi Price (USD): <span id="satoshi-usd">Loading...</span></p>
+    <p>High/Low (24H): <span id="high-low">Loading...</span></p>
+    <p>Change (24H): <span id="change">Loading...</span></p>
+    <p>Market State: <span id="market-state">Loading...</span></p>
 
-    <!-- FED Calendar Card -->
-    <div class="card">
-      <h2>FED Calendar</h2>
-      <p>Next Meeting: <span id="fedMeeting">Loading...</span></p>
-      <p>Last Decision: <span id="fedDecision">Loading...</span></p>
-      <p class="refresh">Refreshes daily</p>
-    </div>
-  </div>
+    <h2>Economic Indicators</h2>
+    <p>US Repo Rate: <span id="repo-rate">Loading...</span></p>
+    <p>Prime Rate: <span id="prime-rate">Loading...</span></p>
+    <p>Unemployment Rate: <span id="unemployment-rate">Loading...</span></p>
+    <p>US Money Supply (M2SL): <span id="us-money-supply">Loading...</span></p>
+    <p>EURO Money Supply: <span id="euro-money-supply">Loading...</span></p>
 
-  <script src="script.js"></script>
+    <h2>FED Calendar</h2>
+    <p>Next Meeting: <span id="fed-meeting">Loading...</span></p>
+
+    <script src="script.js"></script>
 </body>
 </html>
