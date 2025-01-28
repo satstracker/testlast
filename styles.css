@@ -1,40 +1,39 @@
 body {
-  font-family: Arial, sans-serif;\
-  background-color: #f4f4f9;\
-  color: #333;\
-  margin: 0;\
-  padding: 20px;\
-\}\
-h1 \{\
-  color: #f7931a;\
-  text-align: center;\
-\}\
-.country-section \{\
-  text-align: center;\
-  margin-bottom: 20px;\
-\}\
-.container \{\
-  display: flex;\
-  flex-wrap: wrap;\
-  gap: 20px;\
-  justify-content: center;\
-\}\
-.card \{\
-  background: white;\
-  padding: 20px;\
-  border-radius: 10px;\
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\
-  width: 300px;\
-\}\
-.card h2 \{\
-  font-size: 1.5em;\
-  margin-bottom: 10px;\
-\}\
-.card p \{\
-  margin: 5px 0;\
-\}\
-.refresh \{\
-  font-size: 0.8em;\
-  color: #888;\
-\}\
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+h1 {
+  color: #f7931a;
+  text-align: center;
+}
+.country-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+.card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.card p {
+  margin: 5px 0;
+}
+.refresh {
+  font-size: 0.8em;
+  color: #888;
 }
